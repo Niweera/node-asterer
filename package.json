@@ -1,6 +1,6 @@
 {
   "name": "@niweera/node-asterer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CLI tool to generate the AST of a given JavaScript File and save it in *.JSON format.",
   "main": "bin/index.js",
   "scripts": {
