@@ -19,6 +19,9 @@
     "type": "git",
     "url": "git+https://github.com/Niweera/node-asterer.git"
   },
+  "np": {
+    "2fa": false
+  },
   "publishConfig": {
     "access": "public"
   },
