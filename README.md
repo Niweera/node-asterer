@@ -3,7 +3,7 @@
 
 # Node-ASTerer
 
-Node-ASTerer is a CLI tool to generate an [AST](https://www.digitalocean.com/community/tutorials/js-traversing-ast#:~:text=An%20AST%20is%20the%20result,can%20choose%20the%20acorn%20parser.) of a given JavaScript file and it will save it as *.JSON.
+Node-ASTerer is a CLI tool to generate the [AST](https://www.digitalocean.com/community/tutorials/js-traversing-ast) of a given JavaScript file and it will save it as *.json file.
 
 Node-ASTerer uses [AcornJS](https://github.com/acornjs/acorn) under the hood to generate the AST.
 
