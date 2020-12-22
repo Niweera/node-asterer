@@ -1,6 +1,6 @@
 {
   "name": "@niweera/node-asterer",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "A CLI tool to generate the AST of a given JavaScript File and save it in *.JSON format.",
   "main": "bin/index.js",
   "scripts": {
@@ -18,6 +18,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Niweera/node-asterer.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "AST"
