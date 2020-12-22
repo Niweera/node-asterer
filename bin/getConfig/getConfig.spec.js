@@ -1,0 +1,26 @@
+const { getConfig, getJSON } = require("./getConfig");
+const { getInputs } = require("../getInputs/getInputs");
+jest.mock("../getInputs/getInputs");
+
+describe("get config object", () => {
+  let config_path_;
+
+  beforeEach(async () => {
+    const { config_path } = await getInputs();
+    config_path_ = config_path;
+  });
+
+  it("should get the config object", async () => {
+    try {
+      const json_object = await getJSON(config_path_);
+      const local_json_object = await getConfig(null);
+      expect(json_object).toStrictEqual({ ecmaVersion: 2019, locations: true });
+      expect(local_json_object).toStrictEqual({
+        ecmaVersion: 2020,
+        locations: true,
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  });
+});

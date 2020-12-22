@@ -1,9 +1,14 @@
 [![npm version](https://badge.fury.io/js/%40niweera%2Fnode-asterer.svg)](https://badge.fury.io/js/%40niweera%2Fnode-asterer)
 [![NPM Downloads](https://img.shields.io/npm/dt/@niweera/node-asterer)](https://www.npmjs.com/package/@niweera/node-asterer)
+![GitHub](https://img.shields.io/github/license/Niweera/node-asterer)
+[![Coverage:branches](./coverage/badge-branches.svg)](https://www.npmjs.com/package/@niweera/node-asterer)
+[![Coverage:functions](./coverage/badge-functions.svg)](https://www.npmjs.com/package/@niweera/node-asterer)
+[![Coverage:lines](./coverage/badge-lines.svg)](https://www.npmjs.com/package/@niweera/node-asterer)
+[![Coverage:statements](./coverage/badge-statements.svg)](https://www.npmjs.com/package/@niweera/node-asterer)
 
-# Node-ASTerer
+# [Node-ASTerer](https://www.npmjs.com/package/@niweera/node-asterer)
 
-Node-ASTerer is a CLI tool to generate the [AST](https://www.digitalocean.com/community/tutorials/js-traversing-ast) of a given JavaScript file and it will save it in a *.json file.
+Node-ASTerer is a CLI tool to generate the [AST](https://www.digitalocean.com/community/tutorials/js-traversing-ast) of a given JavaScript file, and it will save it in a *.json file.
 
 Node-ASTerer uses [AcornJS](https://github.com/acornjs/acorn) under the hood to generate the AST.
 
@@ -13,3 +18,25 @@ Node-ASTerer uses [AcornJS](https://github.com/acornjs/acorn) under the hood to 
 $ npm install -g @niweera/node-asterer
 $ node-asterer -i /path/to/javascript/file.js -o /output/path/of/file.json
 ```
+## Advanced Usage 
+
+You can provide a `Acorn` configuration file to customize the AST generation with `Acorn`. 
+Follow [Acorn documentation](https://www.npmjs.com/package/acorn#interface) to provide the configuration options.
+
+```bash
+$ node-asterer -i /path/to/javascript/file.js -o /output/path/of/file.json -c /path/to/config/file.json
+```
+
+The `Acorn` configuration JSON file should look like this.
+
+```json
+{
+  "ecmaVersion": 2020,
+  "locations": true,
+  "sourceType": "script",
+  "allowReserved": true,
+  "allowHashBang": true
+}
+```
+
+If a custom `Acorn` configuration file is not provided, AST generation will be done using the `Acorn` default configuration.
