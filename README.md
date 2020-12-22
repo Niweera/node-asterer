@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/%40niweera%2Fnode-asterer.svg)](https://badge.fury.io/js/%40niweera%2Fnode-asterer)
+[![NPM Downloads](https://img.shields.io/npm/dt/@niweera/node-asterer)](https://www.npmjs.com/package/@niweera/node-asterer)
+
 # Node-ASTerer
 
 Node-ASTerer is a CLI tool to generate an [AST](https://www.digitalocean.com/community/tutorials/js-traversing-ast#:~:text=An%20AST%20is%20the%20result,can%20choose%20the%20acorn%20parser.) of a given JavaScript file and it will save it as *.JSON.
