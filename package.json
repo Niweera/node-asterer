@@ -1,10 +1,10 @@
 {
   "name": "@niweera/node-asterer",
-  "version": "1.0.0",
-  "description": "AST Parser with AcornJS",
+  "version": "0.1.0",
+  "description": "A CLI tool to generate the AST of a given JavaScript File and save it in *.JSON format.",
   "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0"
   },
   "author": "Nipuna Weerasekara",
   "license": "MIT",
