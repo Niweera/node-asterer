@@ -1,18 +1,29 @@
 {
-  "name": "node-asterer",
+  "name": "@niweera/node-asterer",
   "version": "1.0.0",
   "description": "AST Parser with AcornJS",
   "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Nipuna Weerasekara",
+  "license": "MIT",
   "bin": {
-    "node-asterer": "./bin/index.js"
+    "node-asterer": "bin/index.js"
   },
   "dependencies": {
     "acorn": "^8.0.4",
     "yargs": "^16.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niweera/node-asterer.git"
+  },
+  "keywords": [
+    "AST"
+  ],
+  "bugs": {
+    "url": "https://github.com/Niweera/node-asterer/issues"
+  },
+  "homepage": "https://github.com/Niweera/node-asterer#readme"
 }
