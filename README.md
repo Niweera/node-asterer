@@ -40,3 +40,101 @@ The `Acorn` configuration JSON file should look like this.
 ```
 
 If a custom `Acorn` configuration file is not provided, AST generation will be done using the `Acorn` default configuration.
+
+## Example 
+
+The following is the input JavaScript file `sample.js`.
+
+```javascript
+const example = "example";
+
+```
+
+The following is the output JSON file `output.json`.
+
+```json
+{
+    "type": "Program",
+    "start": 0,
+    "end": 27,
+    "loc": {
+        "start": {
+            "line": 1,
+            "column": 0
+        },
+        "end": {
+            "line": 2,
+            "column": 0
+        }
+    },
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "start": 0,
+            "end": 26,
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 26
+                }
+            },
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "start": 6,
+                    "end": 25,
+                    "loc": {
+                        "start": {
+                            "line": 1,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 25
+                        }
+                    },
+                    "id": {
+                        "type": "Identifier",
+                        "start": 6,
+                        "end": 13,
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 6
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 13
+                            }
+                        },
+                        "name": "example"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "start": 16,
+                        "end": 25,
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 16
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 25
+                            }
+                        },
+                        "value": "example",
+                        "raw": "\"example\""
+                    }
+                }
+            ],
+            "kind": "const"
+        }
+    ],
+    "sourceType": "script"
+}
+```
