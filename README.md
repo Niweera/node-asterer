@@ -6,6 +6,8 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/Niweera/node-asterer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Niweera/node-asterer?targetFile=package.json)
 [![Dependency Status](https://david-dm.org/Niweera/node-asterer.svg)](https://david-dm.org/Niweera/node-asterer)
 [![devDependencies Status](https://david-dm.org/Niweera/node-asterer/dev-status.svg)](https://david-dm.org/Niweera/node-asterer?type=dev)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Niweera/node-asterer.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Niweera/node-asterer/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Niweera/node-asterer.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Niweera/node-asterer/context:javascript)
 
 # [Node-ASTerer](https://www.npmjs.com/package/@niweera/node-asterer)
 
