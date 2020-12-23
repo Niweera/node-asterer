@@ -22,20 +22,12 @@ const getJSON = (json_path) => {
  * @param config_path
  * @returns {Promise<acorn.Options>}
  */
-const getConfig = (config_path) => {
-  return new Promise(async (resolve, reject) => {
-    try {
-      if (config_path) {
-        const config = await getJSON(config_path);
-        resolve(config);
-      } else {
-        const config = await getJSON(local_config_path);
-        resolve(config);
-      }
-    } catch (e) {
-      reject(e);
-    }
-  });
+const getConfig = async (config_path) => {
+  if (config_path) {
+    return await getJSON(config_path);
+  } else {
+    return await getJSON(local_config_path);
+  }
 };
 
 module.exports = {

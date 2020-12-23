@@ -1,10 +1,11 @@
 [![npm version](https://badge.fury.io/js/%40niweera%2Fnode-asterer.svg)](https://badge.fury.io/js/%40niweera%2Fnode-asterer)
 [![NPM Downloads](https://img.shields.io/npm/dt/@niweera/node-asterer)](https://www.npmjs.com/package/@niweera/node-asterer)
 ![GitHub](https://img.shields.io/github/license/Niweera/node-asterer)
-[![Coverage:branches](./coverage/badge-branches.svg)](https://www.npmjs.com/package/@niweera/node-asterer)
-[![Coverage:functions](./coverage/badge-functions.svg)](https://www.npmjs.com/package/@niweera/node-asterer)
-[![Coverage:lines](./coverage/badge-lines.svg)](https://www.npmjs.com/package/@niweera/node-asterer)
-[![Coverage:statements](./coverage/badge-statements.svg)](https://www.npmjs.com/package/@niweera/node-asterer)
+[![codecov](https://codecov.io/gh/Niweera/node-asterer/branch/main/graph/badge.svg?token=1NQCW1J9UK)](https://codecov.io/gh/Niweera/node-asterer)
+[![Build Status](https://travis-ci.com/Niweera/node-asterer.svg?branch=main)](https://travis-ci.com/Niweera/node-asterer)
+[![Known Vulnerabilities](https://snyk.io/test/github/Niweera/node-asterer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Niweera/node-asterer?targetFile=package.json)
+[![Dependency Status](https://david-dm.org/Niweera/node-asterer.svg)](https://david-dm.org/Niweera/node-asterer)
+[![devDependencies Status](https://david-dm.org/Niweera/node-asterer/dev-status.svg)](https://david-dm.org/Niweera/node-asterer?type=dev)
 
 # [Node-ASTerer](https://www.npmjs.com/package/@niweera/node-asterer)
 
