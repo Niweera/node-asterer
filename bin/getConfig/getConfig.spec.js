@@ -12,6 +12,7 @@ describe("get config object", () => {
 
   it("should get the config object", async () => {
     try {
+      jest.unmock("./getConfig");
       const json_object = await getJSON(config_path_);
       const local_json_object = await getConfig(null);
       expect(json_object).toStrictEqual({ ecmaVersion: 2019, locations: true });
@@ -22,5 +23,12 @@ describe("get config object", () => {
     } catch (e) {
       console.log(e);
     }
+  });
+
+  it("should check if the output path already exists", async () => {
+    expect.assertions(1);
+    await expect(getJSON("config_path_")).rejects.toEqual(
+      `config_path_ does not exist.`
+    );
   });
 });
