@@ -58,11 +58,4 @@ describe("check inputs [input_path, output_path, config_path]", () => {
       checkInputs(config_path_, output_path_, config_path_)
     ).rejects.toEqual(`${config_path_} is not a JavaScript file.`);
   });
-
-  it("should check if the output path already exists", async () => {
-    expect.assertions(1);
-    await expect(
-      checkInputs(input_path_, input_path_, config_path_)
-    ).rejects.toEqual(`${input_path_} is already existing.`);
-  });
 });

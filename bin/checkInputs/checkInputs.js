@@ -17,11 +17,7 @@ const checkInputs = (input_path, output_path, config_path) => {
       if (fs.existsSync(input_path)) {
         const ext = path.extname(path.resolve(input_path));
         if (ext === ".js") {
-          if (!fs.existsSync(output_path)) {
-            resolve();
-          } else {
-            reject(`${output_path} is already existing.`);
-          }
+          resolve();
         } else {
           reject(`${input_path} is not a JavaScript file.`);
         }
